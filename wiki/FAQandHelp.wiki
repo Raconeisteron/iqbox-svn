@@ -12,6 +12,9 @@ Nope. No files are written to your system folders (except your temp folders), no
 === How do I uninstall the program? ===
 Just delete the program's folder. If you want to remove the subversion files, just delete all .svn folders in your IQBox folder. The folders are hidden. (.svn folders are the standard way SVN chooses to track changes.)
 
+=== How do I get those cool green icons when my file is sync'd ===
+Just install [http://tortoisesvn.net/ TortoiseSVN]. It's free and it will add shell integration for any sync'd files.
+
 === What happens technically if I run the startup wizard twice? ===
 To be technical, it will then do another SVN export in the folder you chose with the server/user/password chosen in the Wizard.
 
