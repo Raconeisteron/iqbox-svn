@@ -9,6 +9,16 @@ Unzip the program and run IQBox.EXE. That's it. No install required. It will det
 === Does running IQBox make any system changes or install things in my registry? ===
 Nope. No files are written to your system folders (except your temp folders), no registry entries are made. In the future, we might store data in the special User\AppData\IQBox folder. But again, that's not any system-wide change.
 
+=== Where can I find a free SVN server account to connect to? ===
+There are a few places on the net:
+http://www.assembla.com/catalog/tag/free
+http://unfuddle.com/
+http://www.codespaces.com/
+
+=== Where can I find free SVN server software for Windows ===
+There's lots of options. One we looked at was:
+http://www.visualsvn.com/
+
 === How do I uninstall the program? ===
 Just delete the program's folder. If you want to remove the subversion files, just delete all .svn folders in your IQBox folder. The folders are hidden. (.svn folders are the standard way SVN chooses to track changes.)
 
