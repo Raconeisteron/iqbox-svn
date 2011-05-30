@@ -3,6 +3,18 @@
 
 <wiki:toc max_depth="3" />
 
+=== How do I get started with IQBox? ===
+Unzip the program and run IQBox.EXE. That's it. No install required. It will detect that it's the first run and give you the startup wizard. You can copy the program into your program files folder after that if you like.
+
+=== Does running IQBox make any system changes or install things in my registry? ===
+Nope. No files are written to your system folders (except your temp folders), no registry entries are made. In the future, we might store data in the special User\AppData\IQBox folder. But again, that's not any system-wide change.
+
+=== How do I uninstall the program? ===
+Just delete the program's folder. If you want to remove the subversion files, just delete all .svn folders in your IQBox folder. The folders are hidden. (.svn folders are the standard way SVN chooses to track changes.)
+
+=== What happens technically if I run the startup wizard twice? ===
+To be technical, it will then do another SVN export in the folder you chose with the server/user/password chosen in the Wizard.
+
 === Can I set up IQBox to start automatically in the systray? ===
 Yes. If you start IQBox with the command line "IQBox.exe start" it will start in your tray. So just want a windows shortcut which includes that command line and put it into your start menu's Startup folder. 
 
