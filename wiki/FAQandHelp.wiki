@@ -1,0 +1,17 @@
+#summary Help and FAQ for IQBox
+#labels Phase-Deploy
+
+<wiki:toc max_depth="3" />
+
+=== Can I set up IQBox to start automatically in the systray? ===
+Yes. If you start IQBox with the command line "IQBox.exe start" it will start in your tray. So just want a windows shortcut which includes that command line and put it into your start menu's Startup folder. 
+
+=== My sync stopped working! I don't get it! I need help! ===
+You'll need to read up on subversion (SVN). You will likely just need to do a SVN cleanup in *each* folder and subfolder if the problem is bad. To do a basic cleanup, check the File->Advanced menu. 
+Hopefully in future versions, this won't be an issue.
+
+=== Can I use IQBox for SVN version control when programming? ===
+Yes, but for complex things like branching and conflicts you'll still need to know some SVN. *Don't* use automatic syncing while you are programming  (only when you're not working on it so your get updates right away). Just sync manually. This is for a few reasons. For one, your other coders will have partial files that they may try to run or merge. There's also no use of the message log at this time!
+
+=== Can I have multiple IQBoxes on one PC? ===
+Yes, just copy the entire IQBox program into a different folder, and run IQBox.exe from there. If you think this would be a good feature, make a comment.
