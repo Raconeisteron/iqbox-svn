@@ -33,9 +33,9 @@ When the scheduler runs, it...
 (4) *updates* (svn update). This is where you'll get any remote updates or files. They'll pop right into the folder.
 
 Future plans to improve this are:
-- Delete/add/commit the *specific* files in real-time rather than batch them all at once.
-- Deal with version conflicts automatically or in a better way.
-- Automatically detect SVN issues when interrupted and SVN cleanup.
+  * Delete/add/commit the *specific* files in real-time rather than batch them all at once.
+  * Deal with version conflicts automatically or in a better way.
+  * Automatically detect SVN issues when interrupted and SVN cleanup.
 
 === What happens technically if I run the startup wizard twice? ===
 To be technical, it will then do another SVN export in the folder you chose with the server/user/password chosen in the Wizard.
