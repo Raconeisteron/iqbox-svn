@@ -48,7 +48,7 @@ You'll need to read up on subversion (SVN). You will likely just need to do a SV
 Hopefully in future versions, this won't be an issue.
 
 === Can I use IQBox for SVN version control when programming? ===
-Yes, but for complex things like branching and conflicts you'll still need to know some SVN. *Don't* use automatic syncing while you are programming  (only when you're not working on it so your get updates right away). Just sync manually. This is for a few reasons. For one, your other coders will have partial files that they may try to run or merge. There's also no use of the message log at this time!
+Yes, but only for simple thing. It won't merge code. So, you'll risk overwriting if you are working on the same file as someone else! Also, for complex things like branching and conflicts you'll still need to know some SVN. *Don't* use automatic syncing while you are programming  (only when you're not working on it so your get updates right away). Just sync manually. This is for a few reasons. For one, your other coders will have partial files that they may try to run or merge. There's also no use of the message log at this time!
 
 === Can I have multiple IQBoxes on one PC? ===
 Yes, just copy the entire IQBox program into a different folder, and run IQBox.exe from there. If you think this would be a good feature, make a comment.
