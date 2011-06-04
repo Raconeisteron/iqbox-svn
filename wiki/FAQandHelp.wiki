@@ -9,6 +9,9 @@ Unzip the program and run IQBox.EXE. That's it. No install required. It will det
 === Does running IQBox make any system changes or install things in my registry? ===
 Nope. No files are written to your system folders (except your temp folders), no registry entries are made. In the future, we might store data in the special User\AppData\IQBox folder. But again, that's not any system-wide change.
 
+=== Can't seem to connect? ===
+Ensure your SVN path ends in a slash in the setup wizard. Also, test it by using SVN if you like.
+
 === Where can I find a free SVN server account to connect to? ===
 There are a few places on the net:
 http://www.assembla.com/catalog/tag/free
