@@ -1,10 +1,11 @@
 #summary A roadmap of what features are coming and when they will be released.
 
-*Current state:* Usable Pre-Alpha
+=*Current state:* Usable Pre-Alpha=
+
 === Please [http://iqboxblog.wordpress.com/feedback/ add comments to our feedback page] to make any suggestions! ([http://iqboxblog.wordpress.com/feedback/ Click here.]) ===
 ___
 
-= August 2011 (Released) =
+= June 2011 (Released) =
   * Program that works on Windows, tested on 3 Windows platforms.
   * Basic automated committing and updating.
   * Delta upload, SSL support, etc.
