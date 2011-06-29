@@ -3,6 +3,9 @@
 
 <wiki:toc max_depth="3" />
 
+=== How do I contact you or leave feedback? ===
+We'd love to hear what you think! Please add [http://iqboxblog.wordpress.com/feedback/ a comment on our feedback page here].
+
 === How do I get started with IQBox? ===
 Unzip the program and run IQBox.EXE. That's it. No install required. It will detect that it's the first run and give you the startup wizard. You can copy the program into your program files folder after that if you like.
 
