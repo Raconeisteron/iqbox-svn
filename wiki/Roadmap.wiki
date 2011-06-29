@@ -1,28 +1,23 @@
 #summary A roadmap of what features are coming and when they will be released.
 
 *Current state:* Usable Pre-Alpha
+=== Please [http://iqboxblog.wordpress.com/feedback/ add comments to our feedback page] to make any suggestions! ([http://iqboxblog.wordpress.com/feedback/ Click here.]) ===
+___
 
 = August 2011 (Released) =
-* Program that works on Windows, tested on 3 Windows platforms.
-* Basic automated committing and updating.
-* Delta upload, SSL support, etc.
+  * Program that works on Windows, tested on 3 Windows platforms.
+  * Basic automated committing and updating.
+  * Delta upload, SSL support, etc.
 
 = mid-July 2011 =
-* Individual file commits for increased accuracy.
-* Run on startup
-* Increased logic to deal with more SVN failures.
-* Option to reset SVN data in case things get really messy.
-* Reminder to include "/" at end of server address.
+  * Individual file commits for increased accuracy.
+  * Run on startup
+  * Increased logic to deal with more SVN failures.
+  * Option to reset SVN data in case things get really messy.
+  * Reminder to include "/" at end of server address.
 
 = September 2011 =
-* Volume shadow copy for small, open files under 10 MB.
-* Advanced queuing system.
-* Mac release using Mono.
-* Install as service in Windows.
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * Volume shadow copy for small, open files under 10 MB.
+  * Advanced queuing system.
+  * Mac release using Mono.
+  * Install as service in Windows.
