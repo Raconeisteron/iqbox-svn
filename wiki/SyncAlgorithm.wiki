@@ -1,4 +1,5 @@
 #summary Architecture of how the sync is actually done, in progress
+#labels Phase-Design
 
 = Stand-alone Sync =
 
@@ -8,4 +9,24 @@ _Improvement: Do not list all at once. Terminate the "svn st" thread once 20-100
   * The string is split into an array, and the original string removed from memory to save RAM.
 
   * For each entry in the array:
-  *  * Testing indent
+    * Get the flag f = A, !, M, D
+    * Get the filename r
+    * Process File(r, f)
+
+PROCESS FILE FUNCTION (file, flag):
+  * Case "?" 
+    * Item not under Ver Control: Add and commit file.
+  * Case "A"
+    *'Scheduled for addition, but not uploaded, so upload now: commit file.
+  * Case "M"
+    * Modified. commit file.
+  * Case "C"
+    * Item is in conflict with updates received from repository. Currently, no automated handling for this. _Recommended: Copy the file to file_conflict_datestamp.ext and add+commit that file, and/or notify the user, and/or rename the old file and keep this as the current new one._
+            Case "I" 'Item is being ignored by SVN
+            Case "!" 'Item is missing
+                Log("Deleting...", False)
+                SvnDelete(r)
+                Log(" Done.", True)
+            Case "~" 'Item is versioned as a directory, but has been replaced by a file, or vice versa. The second column tells the status of a file's or directory's properties.
+            Case "L" 'Item is locked
+            Case Else
