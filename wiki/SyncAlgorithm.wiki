@@ -11,6 +11,7 @@ _Improvement: Do not list all at once. Terminate the "svn st" thread once 20-100
   * For each entry in the array:
     * Get the flag f = A, !, M, D
     * Get the filename r
+    * Is the status over 10s old? Then get the status (svn st file) again in case files are changing rapidly.
     * Process File(r, f)
 
 PROCESS FILE FUNCTION (file, flag):
