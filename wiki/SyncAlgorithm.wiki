@@ -22,11 +22,13 @@ PROCESS FILE FUNCTION (file, flag):
     * Modified. commit file.
   * Case "C"
     * Item is in conflict with updates received from repository. Currently, no automated handling for this. _Recommended: Copy the file to file_conflict_datestamp.ext and add+commit that file, and/or notify the user, and/or rename the old file and keep this as the current new one._
-            Case "I" 'Item is being ignored by SVN
-            Case "!" 'Item is missing
-                Log("Deleting...", False)
-                SvnDelete(r)
-                Log(" Done.", True)
-            Case "~" 'Item is versioned as a directory, but has been replaced by a file, or vice versa. The second column tells the status of a file's or directory's properties.
-            Case "L" 'Item is locked
-            Case Else
+  * Case "I"
+    * Item is being ignored by SVN, do nothing
+  * Case "!"
+    * Item is missing, so it was deleting by the user or some other program. So, delete it on SVN with svn delete file
+  * Case "~"
+    * Item is versioned as a directory, but has been replaced by a file, or vice versa. The second column tells the status of a file's or directory's properties. No support for this case at this time.
+  * Case "L"
+    * Item is locked. At this time, do nothing. Locks are resolved in other methods.
+  * Case Else
+    * Do nothing.
