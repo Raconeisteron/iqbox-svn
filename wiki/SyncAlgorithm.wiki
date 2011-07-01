@@ -1,6 +1,9 @@
 #summary Architecture of how the sync is actually done, in progress
 #labels Phase-Design
 
+= Realtime Change Detection =
+At this time, the real-time change detection simply triggers a stand-alone sync. Because SVN adds "journaling", the sync is much faster than a traditional full file scan. _Improvement: Process the specific file that changed instead of running the full sync._
+
 = Stand-alone Sync =
 
   * *svn st* is called and the results are stored into a string.
