@@ -10,13 +10,14 @@ We'd love to hear what you think! Please add [http://iqboxblog.wordpress.com/fee
 Unzip the program and run IQBox.EXE. That's it. No install required. It will detect that it's the first run and give you the startup wizard. You can copy the program into your program files folder after that if you like.
 
 === Does running IQBox make any system changes or install things in my registry? ===
-Nope. No files are written to your system folders (except your temp folders), no registry entries are made. In the future, we might store data in the special User\AppData\IQBox folder. But again, that's not any system-wide change.
+Nope, unless you set it to run on Windows Startup. If you did add that, first remove that option in the File->Advanced menu. Aside from that, no files are written to your system folders (except your temp folders), no registry entries are made. In the future, we might store data in the special User\AppData\IQBox folder. But again, that's not any system-wide change.
 
 === Can't seem to connect? ===
 Ensure your SVN path ends in a slash in the setup wizard. Also, test it by using SVN if you like.
 
 === Where can I find a free SVN server account to connect to? ===
 There are a few places on the net:
+http://www.sliksvn.com/
 http://www.assembla.com/catalog/tag/free
 http://unfuddle.com/
 http://www.codespaces.com/
@@ -26,7 +27,7 @@ There's lots of options. One we looked at was:
 http://www.visualsvn.com/
 
 === How do I uninstall the program? ===
-Just delete the program's folder. If you want to remove the subversion files, just delete all .svn folders in your IQBox folder. The folders are hidden. (.svn folders are the standard way SVN chooses to track changes.)
+Just delete the program's folder. If you want to remove the subversion files, just delete all .svn folders in your IQBox folder. The folders are hidden. (.svn folders are the standard way SVN chooses to track changes.) Also, if you set it to run on Windows start up, turn that off.
 
 === How do I get those cool green icons when my file is sync'd ===
 Just install [http://tortoisesvn.net/ TortoiseSVN]. It's free and it will add shell integration for any sync'd files.
@@ -54,7 +55,8 @@ You'll need to read up on subversion (SVN). You will likely just need to do a SV
 Hopefully in future versions, this won't be an issue.
 
 === Can I use IQBox for SVN version control when programming? ===
-Yes, but only for simple thing. It won't merge code. So, you'll risk overwriting if you are working on the same file as someone else! Also, for complex things like branching and conflicts you'll still need to know some SVN. *Don't* use automatic syncing while you are programming  (only when you're not working on it so your get updates right away). Just sync manually. This is for a few reasons. For one, your other coders will have partial files that they may try to run or merge. There's also no use of the message log at this time!
+First note: If you're interesting in using IQBox for programming, send us feedback on our [http://iqboxblog.wordpress.com/ blog] since we are strongly considering adding features for programming.
+To answer your questions: Yes, you can use it for programming, but only for simple thing. It won't merge code, and it commits *before* updating. So, you'll risk overwriting if you are working on the same file as someone else! Also, for complex things like branching and conflicts you'll still need to know some SVN. *Don't* use automatic syncing while you are programming  (only when you're not working on it so your get updates right away). Just sync manually. This is for a few reasons. For one, your other coders will have partial files that they may try to run or merge. There's also no use of the message log at this time!
 
 === Can I have multiple IQBoxes on one PC? ===
 Yes, just copy the entire IQBox program into a different folder, and run IQBox.exe from there. If you think this would be a good feature, make a comment.
