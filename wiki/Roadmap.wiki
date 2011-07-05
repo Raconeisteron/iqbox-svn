@@ -30,5 +30,5 @@ ___
   * Individual file commits on real-time sync.
   * Better integration of sign-up for an SVN server.
 
-= February 2011 =
+= February 2012 =
   * Better sharing tools.
