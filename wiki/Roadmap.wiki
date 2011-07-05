@@ -5,12 +5,12 @@
 === Please [http://iqboxblog.wordpress.com/feedback/ add comments to our feedback page] to make any suggestions! ([http://iqboxblog.wordpress.com/feedback/ Click here.]) ===
 ___
 
-= June 2011 (Released) =
+= June 2011 (Released May 30) =
   * Program that works on Windows, tested on 3 Windows platforms.
   * Basic automated committing and updating.
   * Delta upload, SSL support, etc.
 
-= mid-July 2011 =
+= mid-July 2011 (Released July 04) =
   * Individual file commits for increased accuracy.
   * Run on startup
   * Increased logic to deal with more SVN failures.
@@ -22,3 +22,13 @@ ___
   * Advanced queuing system.
   * Mac release using Mono.
   * Install as service in Windows.
+
+= December 2011 =
+  * Linux release.
+  * Easier account management for multiple IQBox accounts on one PC.
+  * SVN status logging.
+  * Individual file commits on real-time sync.
+  * Better integration of sign-up for an SVN server.
+
+= February 2011 =
+  * Better sharing tools.
