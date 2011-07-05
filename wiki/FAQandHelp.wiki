@@ -26,6 +26,10 @@ http://www.codespaces.com/
 There's lots of options. One we looked at was:
 http://www.visualsvn.com/
 
+=== How can I install IQBox as a service? ==
+You can use [http://www.firedaemon.com/ FireDaemon] or [https://iain.cx/src/nssm/ NSSM]. Use the command line "start" (no quotes) to automatically start in the system tray with automatic synchronization on.
+You can set it to run on Windows login start-up with the options in the File>Advanced Options menu. Future releases will let you install as a service more easily.
+
 === How do I uninstall the program? ===
 Just delete the program's folder. If you want to remove the subversion files, just delete all .svn folders in your IQBox folder. The folders are hidden. (.svn folders are the standard way SVN chooses to track changes.) Also, if you set it to run on Windows start up, turn that off.
 
