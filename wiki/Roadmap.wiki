@@ -18,17 +18,4 @@ ___
   * Reminder to include "/" at end of server address.
 
 = September 2011 =
-  * Volume shadow copy for small, open files under 10 MB.
-  * Advanced queuing system.
-  * Mac release using Mono.
-  * Install as service in Windows.
-
-= December 2011 =
-  * Linux release.
-  * Easier account management for multiple IQBox accounts on one PC.
-  * SVN status logging.
-  * Individual file commits on real-time sync.
-  * Better integration of sign-up for an SVN server.
-
-= February 2012 =
-  * Better sharing tools.
+  * Project cancelled and rewritten in Python to support FTP and FTP-SSL instead of SVN.
